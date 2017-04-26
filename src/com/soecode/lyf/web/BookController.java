@@ -24,7 +24,7 @@ import com.soecode.lyf.service.BookService;
 
 @Controller
 @RequestMapping("/book") // url:/模块/资源/{id}/细分 /seckill/list
-public class BookController {
+public class BookController {//分支增加
 
 	private Logger logger = LoggerFactory.getLogger(this.getClass());
 
@@ -71,6 +71,7 @@ public class BookController {
 			execution = new AppointExecution(bookId, AppointStateEnum.INNER_ERROR);
 		}
 		return new Result<AppointExecution>(true, execution);
+		
 	}
 
 }
